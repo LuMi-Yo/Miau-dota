@@ -1,5 +1,5 @@
 import './style.css'
-import pets from './pets.js'
+import pets from './pets'
 
 function createPet(pets){
     return `
@@ -7,6 +7,7 @@ function createPet(pets){
         <img src="${pets.image}">
         <p class="name">${pets.name}</p>
         <p class="infos-pet">${pets.age} | ${pets.sexo}</p>
+        <img src="src/imgs/Itens miaudota/pata1.png" alt="pata1" id="pata1">
     </div>`
         
 }

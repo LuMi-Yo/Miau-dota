@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+
+.fredoka {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,6 +26,8 @@
 
 body{
   background-color: #FCF9F3;
+  font-family: fredoka;
+  font-weight: 400;
 }
 
 /*------------MENU----------*/
@@ -23,31 +36,87 @@ header{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: end;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-header .logo{
-  text-align: start;
+header #logo{
+  width: 150px;
+  margin-top: 10px;
+}
+
+header #dog1 {
+  height: 75px;
+  position: relative;
+  top: 15px;
+}
+
+header .imgs-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  height: auto;
+}
+
+header #user {
+  height: 45px;
+  border-radius: 100px;
 }
 
 header .options{
-  text-align: end;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FCF9F3;
+  margin-top: 12px;
 }
 
 header .options a{
-  margin: 10px;
-  font-size: 20px;
-  color: black;
+  margin-right: 15px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #452824;
   text-decoration: none;
+}
+
+header .options a:hover{
+  color: #e58233;
+}
+
+
+/*------------FILTERS-------------*/
+
+.filters {
+  display: flex;
+  justify-content: left;
+  margin: 30px 0 5px 100px;
+}
+
+.filters button {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: #e58233;
+  border: none;
+  border-radius: 13px;
+  width: auto;
+  padding: 5px 10px 5px 10px;
+}
+
+.filters .dog-cat button{
+  background-color: #452824;
 }
 
 /*------------PETS-------------*/
 .pets{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 20px;
+  margin-top: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
 }
 
 .pets div{
@@ -56,24 +125,49 @@ header .options a{
   color: black;
   background-color: #F2F2F2;
   padding: 10px;
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
 }
 
 .pets div img{
-  height: 100px;
-  width: 90px;
+  height: 250px;
+  width: 250px;
+}
+
+.pets .name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.pets .infos-pet {
+  margin-top: 0px;
+  font-size: 1.3rem;
+}
+
+.pets #pata1 {
+  width: 75px;
+  position: relative;
+  bottom: 50px;
+  left: 210px;
+  transform: rotate(350deg);
 }
 
 /*-----------FOOTER---------*/
 footer{
   background-color: #EEE7D4;
-  height: 150px;
   color: #000000;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
 }
 
 footer .logo-footer{
-  height: 100px;
-  width: 100px;
+  height: 158px;
+  margin-bottom: 15px;
+  margin-right: 100px;
 }
