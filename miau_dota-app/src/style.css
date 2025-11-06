@@ -121,6 +121,33 @@ header .options a:hover{
   background-color: #e58233;
 }
 
+#opcoesSexo {
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FCF9F3;
+  min-width: 100px;
+  padding: 5px px 5px 0;
+  text-align: left;
+}
+
+#dropdownSexo {
+  position: relative;
+  display: block;
+}
+
+#btnFemea:hover {
+  color:#e58233 !important;
+}
+#btnMacho:hover {
+  color:#e58233 !important;
+}
+
+
 /*------------PETS-------------*/
 .pets{
   margin-top: none;

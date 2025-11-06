@@ -1,44 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Início</title>
   </head>
   <body>
     <header>
       <div class="imgs-header">
-        <img src="src/imgs/Itens miaudota/Dog1.png" alt="dog1" id="dog1">
-        <img src="src/imgs/Itens miaudota/logo.png" alt="logo" id="logo">
+        <img src="src/imgs/Itens miaudota/Dog1.png" alt="dog1" id="dog1" />
+        <img src="src/imgs/Itens miaudota/logo.png" alt="logo" id="logo" />
       </div>
       <div class="options">
         <a href="index.html">Início</a>
         <a href="">Doar</a>
         <a href="">Eventos de adoção</a>
         <a href="">
-          <img src="src/imgs/Itens miaudota/user-base.png" alt="base-user-profile" id="user">
+          <img
+            src="src/imgs/Itens miaudota/user-base.png"
+            alt="base-user-profile"
+            id="user"
+          />
         </a>
       </div>
     </header>
 
     <div class="filters">
-      <button>Porte</button>
-      <button>Idade</button>
-      <button>Sexo</button>
-      <div class="dog-cat"> 
+      <button id="btnPorte">Porte</button>
+      <button id="btnIdade">Idade</button>
+
+      <div id="dropdownSexo">
+        <button id="btnSexo">Sexo</button>
+        <div id="opcoesSexo">
+          <button id="btnFemea">Fêmea</button>
+          <button id="btnMacho">Macho</button>
+        </div>
+      </div>
+
+      <div class="dog-cat">
         <button>Miau</button>
         <button>Auau</button>
       </div>
     </div>
 
     <section class="pets"></section>
-    <script src="src/main.js" type="module" ></script>
-    
+    <script src="src/main.js" type="module"></script>
+
     <footer>
-      <img class="logo-footer" src="src/imgs/Itens miaudota/logo2.png">
+      <img class="logo-footer" src="src/imgs/Itens miaudota/logo2.png" />
       <div class="infos-pag">
-        Entre em contato <br> Miaudota@miauau.com
+        Entre em contato <br />
+        Miaudota@miauau.com
       </div>
     </footer>
 
