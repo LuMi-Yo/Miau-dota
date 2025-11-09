@@ -110,6 +110,7 @@ header .options a:hover{
   padding: 10px;
   margin-top: 30px;
   margin-left: 20px;
+  color:#000000;
 }
 
 #filtrar-icone {
@@ -139,6 +140,7 @@ header .options a:hover{
   border-color: #c4c1c1;
   padding: 8px;
   margin-left: 5px;
+  color:#000000;
 }
 
 .btnOpcao:hover {
@@ -152,6 +154,7 @@ header .options a:hover{
   font-weight:600;
   font-size: 15px;
   margin-left: 10px;
+  color:#000000;
 }
 
 #filtrar-por {
@@ -160,6 +163,7 @@ header .options a:hover{
   font-size: 20px;
   margin-left: 10px;
   margin-top: 5px;
+  color:#000000;
 }
 
 #filtrar-fechar{
@@ -189,6 +193,7 @@ header .options a:hover{
   border-color: #c4c1c1;
   padding: 8px;
   width: 110px;
+  color:#000000;
 }
 
 #limpar:hover {
