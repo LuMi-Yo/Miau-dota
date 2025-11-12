@@ -50,15 +50,34 @@ function arrayFiltros() {
   return lista_filtros;
 }
 
-//Filtragem dos pets passando pelo array criado
 function filtrarPets(lista) {
+  //Objeto para armazenar os filtros por tipo
+  const grupos = {};
+  //Agrupa filtros da mesma chave
+  lista.forEach((item) => {
+    if (grupos[item[0]] === undefined) {
+      grupos[item[0]] = [];
+    }
+    grupos[item[0]].push(item[1]);
+  });
+  console.log("Objeto grupos:", grupos);
 
-//Aplicar todos os filtros em sequência
-  const filtrados = lista.reduce((acc, item) => acc.filter((pet) => pet[item[0]]===item[1]), pets
-);
+  const filtrados = pets.filter((pet) => {
+    for (let chave in grupos) {
+      const opcoes = grupos[chave];
 
-//join serve para juntar cards sem vírgula entre eles
-petcard.innerHTML = filtrados.map(createPet).join("");
+      if (opcoes.includes(pet[chave])) {
+        continue; //passou nesse grupo, vai testar o próximo
+      } else {
+        return false; //se falhar em algum grupo, o pet é descartado
+      }
+    }
+    //se o pet chegou aqui, passou em todos os grupos
+    return true;
+  });
+
+  //join junta cards sem vírgula entre eles
+  petcard.innerHTML = filtrados.map(createPet).join("");
 }
 
 //Buscar
