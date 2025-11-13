@@ -14,8 +14,8 @@ if (pet) {
     // document.getElementById('pet-imagem').alt = pet.nome;
     document.getElementById('pet-name').textContent = pet.name;
     document.getElementById('pet-desc').textContent = pet.desc;
-    document.getElementById('pet-sexo').textContent = pet.desc
-    document.getElementById('pet-idade').textContent = `${pet.age} anos`;
+    document.getElementById('pet-sexo').textContent = pet.sexo
+    document.getElementById('pet-age').textContent = pet.age;
   } else {
     document.body.innerHTML = '<h1 class="pet-não-encontrado">Pet não encontrado!</h1>';
   }

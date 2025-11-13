@@ -26,7 +26,7 @@
 
 body{
   background-color: #FCF9F3;
-  font-family:'Segoe UI', sans-serif, fredoka; 
+  font-family:fredoka, 'Segoe UI', sans-serif; 
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -265,6 +265,69 @@ header .options a:hover{
   bottom: 20%;
   left: 50%;
   transform: rotate(350deg);
+}
+
+/*-----------DETAILS PET---------*/
+.infos-pet {
+  margin: 30px;
+  display: flex;
+  color: #452824;
+  font-family: ;
+}
+
+.infos-pet .foto-pet {
+  background-color: #fff;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.infos-pet .foto-pet #pet-image {
+  margin: 10px;
+  width: 300px;
+}
+
+.infos-pet .foto-pet #pata1 {
+  width: 90px;
+  position: relative;
+  left: 83%;
+  transform: rotate(343deg);
+}
+
+.infos-pet .dados-pet {
+  padding-left: 60px;
+}
+
+.infos-pet .dados-pet  h2{
+  margin: 0px;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.infos-pet .dados-pet h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.infos-pet .dados-pet .idade-sexo {
+  display: flex;
+  font-weight: 300;
+  flex-direction: row; 
+}
+
+.infos-pet .dados-pet button{
+  font-size: 1.3rem;
+  background-color: #452824;
+  border: none;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+.infos-pet .dados-pet #pet-desc {
+  font-size: 1.5rem;
 }
 
 /*-----------FOOTER---------*/
