@@ -11,6 +11,8 @@ const btnFiltrar = document.getElementById("filtrar");
 btnFiltrar.addEventListener("click", (event) => {
   popup.style.display = "flex";
   btnFiltrar.style.backgroundColor = "#e58233";
+  btnFiltrar.style.border = "none";
+  btnFiltrar.style.color = "white";
 });
 
 //Fechar pop-up
@@ -18,6 +20,8 @@ const fechar = document.getElementById("fechar");
 fechar.addEventListener("click", (event) => {
   popup.style.display = "none";
   btnFiltrar.style.backgroundColor = "transparent";
+  btnFiltrar.style.color = "black";
+  btnFiltrar.style.border = "1px solid #a3a1a0";
 });
 
 //Array para acumular os filtros selecionados

@@ -25,7 +25,7 @@
 
 body{
   background-color: #FCF9F3;
-  font-family:fredoka, 'Segoe UI', sans-serif; 
+  font-family: fredoka, 'Segoe UI', sans-serif; 
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -127,13 +127,19 @@ header .options a:hover {
   border: 1px;
   border-style: solid;
   border-radius: 80px;
-  border-color: #e58233;
-  background-color: #e58233;
+  border-color: #a3a1a0;
+  background-color: transparent;
   font-size: medium;
   padding: 10px;
   margin-top: 30px;
   margin-left: 60px;
-  color: #fff;;
+  color: black;
+}
+
+#filtrar:hover {
+  background-color: #e58233;
+  color: white;
+  border: none;
 }
 
 #filtrar-icone {
