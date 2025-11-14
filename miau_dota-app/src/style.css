@@ -302,7 +302,7 @@ header .options a:hover {
   place-items: center;
 }
 
-.pets div, .vets div {
+.pets div{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,19 +316,19 @@ header .options a:hover {
   font-family: fredoka;
 }
 
-.pets div img, .vets div img {
+.pets div img{
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
 }
 
-.pets a, .vets a {
+.pets a{
   text-decoration: none;
   height: 100%;
 }
 
-.pets .name, .vets .name {
+.pets .name {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0px;
@@ -337,9 +337,9 @@ header .options a:hover {
   text-align: center;
 }
 
-.vets .specialty, .location{
+/* .vets .specialty, .location{
   margin: 0px;
-}
+} */
 
 .pets .infos-pet {
   margin-top: 0px;

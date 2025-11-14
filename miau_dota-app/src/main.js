@@ -6,6 +6,7 @@ import pata1 from "./imgs/miaudota/pata1.png"
 
 export function createPet(pets) {
   return `
+  <a href="/Miau-dota/pages/details-pet.html?id=${pets.id}">
     <div>
         <img src="${pets.image}">
         <p class="name">${pets.name}</p>
