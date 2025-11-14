@@ -6,8 +6,9 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                detailsPet: resolve(__dirname, 'pages/details-pet.html')
+                MDmain: resolve(__dirname, 'index.html'),
+                detailsPet: resolve(__dirname, 'pages/details-pet.html'),
+                MJmain: resolve(__dirname, 'pages/miau-juda-ini.html')
             }
         }
     }
