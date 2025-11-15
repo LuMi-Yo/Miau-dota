@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap");
 
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -21,7 +21,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #FCF9F3;
+  background-color: #fcf9f3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,14 +29,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  background-color: #FCF9F3;
-  font-family: fredoka, 'Segoe UI', sans-serif; 
+body {
+  background-color: #fcf9f3;
+  font-family: fredoka, "Segoe UI", sans-serif;
   font-weight: 400;
   width: 100%;
 }
 
-section, div {
+section,
+div {
   max-width: 100%;
 }
 
@@ -123,7 +124,7 @@ header .options a:hover {
 /* ----- SETAS DE NAVEGAÇÃO ----- */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #654321;          
+  color: #654321;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -146,13 +147,13 @@ header .options a:hover {
 
 /* ----- BOLINHAS (PAGINATION) ----- */
 .swiper-pagination {
-  bottom: 10px !important; 
+  bottom: 10px !important;
 }
 
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: #d4a373;   
+  background: #d4a373;
   opacity: 0.5;
   transition: 0.2s;
 }
@@ -292,7 +293,7 @@ header .options a:hover {
 }
 
 /*------------PETS-------------*/
-.pets{
+.pets {
   margin-top: 1%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -301,7 +302,7 @@ header .options a:hover {
   place-items: center;
 }
 
-.pets div{
+.pets div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,14 +316,14 @@ header .options a:hover {
   font-family: fredoka;
 }
 
-.pets div img{
+.pets div img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
 }
 
-.pets a{
+.pets a {
   text-decoration: none;
   height: 100%;
 }
@@ -384,7 +385,7 @@ header .options a:hover {
   padding-left: 60px;
 }
 
-.infos-pet .dados-pet  h2{
+.infos-pet .dados-pet h2 {
   margin: 0px;
   font-size: 5rem;
   font-weight: 500;
@@ -400,10 +401,10 @@ header .options a:hover {
 .infos-pet .dados-pet .idade-sexo {
   display: flex;
   font-weight: 300;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
-.infos-pet .dados-pet button{
+.infos-pet .dados-pet button {
   font-size: 1.3rem;
   background-color: #452824;
   border: none;
@@ -471,8 +472,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  flex-wrap: wrap;  
-  gap: 20px;            
+  flex-wrap: wrap;
+  gap: 20px;
   text-align: center;
 }
 
@@ -519,17 +520,11 @@ footer .logo-footer {
     height: 32px;
   }
 
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    font-size: 16px !important;
-  }
-
   footer .logo-footer {
     height: 110px;
-    margin-right: 0;      
-    max-height: 120px;     
+    margin-right: 0;
+    max-height: 120px;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -563,11 +558,6 @@ footer .logo-footer {
     height: 28px;
   }
 
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    font-size: 14px !important;
-  }
-
   .popup {
     width: 90%;
   }
@@ -578,6 +568,15 @@ footer .logo-footer {
 
   footer .logo-footer {
     height: 90px;
-    max-height: 100px;   
+    max-height: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pets div {
+    padding: 20px;
+    width: 280px;
+    height: 370px;
+    margin: 4% 3% 3% 1%;
   }
 }
