@@ -8,7 +8,9 @@ export default defineConfig({
             input: {
                 MDmain: resolve(__dirname, 'index.html'),
                 detailsPet: resolve(__dirname, 'pages/details-pet.html'),
-                MJmain: resolve(__dirname, 'pages/miau-juda-ini.html')
+                MJmain: resolve(__dirname, 'pages/miau-juda-ini.html'),
+                donations: resolve(__dirname, 'pages/donation.html'),
+                events: resolve(__dirname, 'pages/eventos.html')
             }
         }
     }
