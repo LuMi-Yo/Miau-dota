@@ -47,6 +47,14 @@ const vets = [
         specialty: 'cardio',
         description: '',
     },
+    {
+        id: '7',
+        image: 'https://i.pinimg.com/736x/53/c0/6c/53c06cf7e335dcef34e500edb50dd6e4.jpg',
+        name: 'Dr. Markos Liino',
+        location: 'Rua dos Bobos, 127',
+        specialty: 'animais silvestres',
+        description: 'Prazer, eu sou o Dr. Markos Liino, médico veterinário especializado no cuidado de animais silvestres e exóticos, como aves, répteis e pequenos mamíferos. Trabalho com consultas, exames, manejo nutricional, cirurgias e orientação para criação responsável, sempre seguindo normas de bem-estar e conservação da fauna. Tenho como missão garantir que cada espécie receba o manejo adequado às suas necessidades únicas, com respeito, segurança e conhecimento técnico. Conte comigo para cuidar do seu animal exótico com profissionalismo e carinho.',
+    },
 ]
 
 export default vets;

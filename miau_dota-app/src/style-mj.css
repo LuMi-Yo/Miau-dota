@@ -33,7 +33,6 @@ body{
   background-color: #FCF9F3;
   font-family: fredoka, 'Segoe UI', sans-serif; 
   font-weight: 400;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -101,7 +100,7 @@ header .options a:hover {
 .vets{
   margin-top: 1%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-content: center;
   align-items: center;
   place-items: center;
@@ -146,10 +145,18 @@ header .options a:hover {
   margin: 0%;
 }
 
+.vets .infos-vet {
+  margin-top: 0px;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .vets .estetoscopio {
-  width: 75px;
+  width: 80px;
+  height: 90px;
   position: relative;
-  bottom: 99%;
+  bottom: 100%;
   left: 50%;
   transform: rotate(350deg);
 }
@@ -159,34 +166,48 @@ header .options a:hover {
   margin: 30px;
   display: flex;
   color: #452824;
+  gap: 30px;
 }
 
 .infos-vet .foto-vet {
-  background-color: #fff;
-  height: 350px;
-  width: auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5%;
-}
-
-.infos-vet .foto-vet #vet-image {
-  margin: 10%;
-  width: 300px;
-}
-
-.infos-vet .foto-vet #estetoscopio {
-  width: 90px;
+  width: 300px;                   
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 18px;            
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   position: relative;
-  left: -4%;
-  bottom: 112%;
+  padding: 20px;                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
 }
 
+/* IMAGEM PRINCIPAL */
+.infos-vet .foto-vet #vet-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;               
+  border-radius: 12px;             
+  margin: 0;
+}
+
+/* ESTETOSCÓPIO */
+.infos-vet .foto-vet #estetoscopio {
+  position: absolute;
+  width: 90px;
+  top: -15px;
+  left: -15px;
+  z-index: 5;
+}
+
+/* TEXTOS À DIREITA */
 .infos-vet .dados-vet {
-  padding-left: 60px;
+  max-width: 75%;
 }
 
 .infos-vet .dados-vet h2 {
-  margin: 0px;
+  margin: 0;
   font-size: 5rem;
   font-weight: 500;
 }
@@ -214,10 +235,9 @@ header .options a:hover {
   margin-left: 20px;
 }
 
-.infos-vet .dados-vet #pet-desc {
-  font-size: 1.5rem;
+.infos-vet .dados-vet #vet-desc {
+  font-size: 1.3rem;
 }
-
 /*-----------FOOTER---------*/
 footer {
   background-color: #28aef8;
@@ -268,10 +288,9 @@ footer .logo-footer {
 
   footer .logo-footer {
     height: 110px;
-    margin-right: 0;      
-    max-height: 120px;     
+    margin-right: 0;
+    max-height: 120px;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -297,6 +316,15 @@ footer .logo-footer {
 
   footer .logo-footer {
     height: 90px;
-    max-height: 100px;   
+    max-height: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pets div {
+    padding: 20px;
+    width: 280px;
+    height: 370px;
+    margin: 4% 3% 3% 1%;
   }
 }

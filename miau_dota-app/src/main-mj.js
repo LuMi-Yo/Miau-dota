@@ -4,8 +4,8 @@ import estetoscopio from "../public/imgs/miaujuda/estetoscopio.png"
 
 export function CreatVet(vet){
     return`
-    <div>
     <a href="/MiauTech/pages/details-vet.html?id=${vet.id}">
+    <div>
         <img src="${vet.image}" alt="vet">
         <p class="name">${vet.name}</p>
         <p class="specialty">${vet.specialty}</p>
