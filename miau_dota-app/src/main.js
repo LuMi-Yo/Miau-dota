@@ -2,7 +2,6 @@ import "./style.css";
 import pets from "./pets.js";
 import "./filters.js";
 import "./slides.js";
-import pata1 from "./imgs/miaudota/pata1.png"
 
 export function createPet(pets) {
   return `
@@ -11,7 +10,7 @@ export function createPet(pets) {
         <img src="${pets.image}">
         <p class="name">${pets.name}</p>
         <p class="infos-pet">${pets.age} | ${pets.sexo}</p>
-        <img src="${pata1}" alt="pata1" class="pata1">
+        <img src="./public/imgs/miaudota/pata1.png" alt="pata1" class="pata1">
     </div> 
   </a>`;
 }

@@ -1,7 +1,7 @@
 const vets = [
     {
         id: '1',
-        image: '../src/imgs/miaujuda/cat-search.png',
+        image: '../imgs/miaujuda/cat-search.png',
         name: 'Dra. lana dos Reis',
         location: 'local',
         specialty: 'cardio',
@@ -9,7 +9,7 @@ const vets = [
     },
     {
         id: '2',
-        image: '../src/imgs/miaujuda/cat-search.png',
+        image: '../imgs/miaujuda/cat-search.png',
         name: 'Dra. Charlene xavier',
         location: 'local',
         specialty: 'cardio',
@@ -17,7 +17,7 @@ const vets = [
     },
     {
         id: '3',
-        image: '../src/imgs/miaujuda/cat-search.png',
+        image: '../imgs/miaujuda/cat-search.png',
         name: 'Dra. Adrianne Lira',
         location: 'local',
         specialty: 'cardio',
@@ -25,7 +25,7 @@ const vets = [
     },
     {
         id: '4',
-        image: '../src/imgs/miaujuda/cat-search.png',
+        image: '../imgs/miaujuda/cat-search.png',
         name: 'Dr. Troi Silva',
         location: 'local',
         specialty: 'cardio',
@@ -33,7 +33,7 @@ const vets = [
     },
     {
         id: '5',
-        image: '../src/imgs/miaujuda/cat-search.png',
+        image: '../imgs/miaujuda/cat-search.png',
         name: 'Dra. Glaucia Costa',
         location: 'local',
         specialty: 'cardio',
@@ -41,7 +41,7 @@ const vets = [
     },
     {
         id: '6',
-        image: '../src/imgs/miaujuda/cat-search.png',
+        image: '../imgs/miaujuda/cat-search.png',
         name: 'Dr. Rubel Brisolla',
         location: 'local',
         specialty: 'cardio',
