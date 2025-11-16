@@ -154,6 +154,68 @@ header .options a:hover {
   transform: rotate(350deg);
 }
 
+/*-----------DETAILS PET---------*/
+.infos-vet {
+  margin: 30px;
+  display: flex;
+  color: #452824;
+}
+
+.infos-vet .foto-vet {
+  background-color: #fff;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.infos-vet .foto-vet #vet-image {
+  margin: 10px;
+  width: 300px;
+}
+
+.infos-vet .foto-vet #estetoscopio {
+  width: 90px;
+  position: relative;
+  left: 83%;
+  transform: rotate(343deg);
+}
+
+.infos-vet dados-vet {
+  padding-left: 60px;
+}
+
+.infos-vet dados-vet h2 {
+  margin: 0px;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.infos-vet dados-vet h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.infos-vet dados-vet .specialty-location {
+  display: flex;
+  font-weight: 300;
+  flex-direction: row;
+}
+
+.infos-vet dados-vet button {
+  font-size: 1.3rem;
+  background-color: #452824;
+  border: none;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+.infos-vet .dados-vet #pet-desc {
+  font-size: 1.5rem;
+}
+
 /*-----------FOOTER---------*/
 footer {
   background-color: #28aef8;
