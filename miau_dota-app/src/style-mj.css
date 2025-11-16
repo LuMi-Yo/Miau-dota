@@ -163,46 +163,48 @@ header .options a:hover {
 
 .infos-vet .foto-vet {
   background-color: #fff;
-  height: 400px;
+  height: 350px;
+  width: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
 }
 
 .infos-vet .foto-vet #vet-image {
-  margin: 10px;
+  margin: 10%;
   width: 300px;
 }
 
 .infos-vet .foto-vet #estetoscopio {
   width: 90px;
   position: relative;
-  left: 83%;
-  transform: rotate(343deg);
+  left: -4%;
+  bottom: 112%;
 }
 
-.infos-vet dados-vet {
+.infos-vet .dados-vet {
   padding-left: 60px;
 }
 
-.infos-vet dados-vet h2 {
+.infos-vet .dados-vet h2 {
   margin: 0px;
   font-size: 5rem;
   font-weight: 500;
 }
 
-.infos-vet dados-vet h3 {
+.infos-vet .dados-vet h3 {
   font-size: 2.5rem;
   font-weight: 300;
   margin: 0px;
   padding-right: 10px;
 }
 
-.infos-vet dados-vet .specialty-location {
+.infos-vet .dados-vet .specialty-location {
   display: flex;
   font-weight: 300;
   flex-direction: row;
 }
 
-.infos-vet dados-vet button {
+.infos-vet .dados-vet button {
   font-size: 1.3rem;
   background-color: #452824;
   border: none;
@@ -236,6 +238,8 @@ footer .logo-footer {
   margin-bottom: 15px;
   margin-right: 100px;
 }
+
+/* ----------RESPONSIVIDADE---------- */
 
 @media (max-width: 768px) {
   header {
