@@ -310,14 +310,14 @@ header .options a:hover {
   background-color: #f2f2f2;
   padding: 10px;
   width: 250px;
-  height: 350px;
+  height: 345px;
   margin: 10% 15% 5% 1%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   font-family: fredoka;
 }
 
 .pets div img {
-  width: 100%;
+  width: 106%;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
@@ -331,6 +331,7 @@ header .options a:hover {
 .pets .name {
   font-size: 1.5rem;
   font-weight: 500;
+  margin-top: 10px;
   margin-bottom: 0px;
   text-decoration: none;
   color: #452824;
@@ -354,7 +355,7 @@ header .options a:hover {
 
 /*-----------DETAILS PET---------*/
 .infos-pet {
-  margin: 30px;
+  margin: 50px;
   display: flex;
   color: #452824;
 }
@@ -368,6 +369,9 @@ header .options a:hover {
 .infos-pet .foto-pet #pet-image {
   margin: 10px;
   width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .infos-pet .foto-pet #pata1 {
@@ -411,7 +415,37 @@ header .options a:hover {
 }
 
 .infos-pet .dados-pet #pet-desc {
-  font-size: 1.5rem;
+  margin-top: 15px;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.infos-pet .dados-pet button:hover{
+  cursor: pointer;
+}
+
+.tabela-infos {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border-collapse: separate;
+  color: #452824;
+  font-size: 2.5rem;
+  margin: 80px auto 100px auto;
+  border: transparent;
+  border-spacing: 25px;
+  
+}
+
+.tabela-infos tr{
+  background-color: #eee7d4;
+}
+
+.tabela-infos th {
+  width: 50px;
+  padding: 40px;
+  font-weight: 500;
+  width: 33.3%;
 }
 
 /*------------DONATION PAGE-------------*/
@@ -519,6 +553,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   text-align: center;
+  margin-top: 80px;
 }
 
 footer .logo-footer {
