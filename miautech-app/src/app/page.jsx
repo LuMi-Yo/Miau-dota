@@ -13,9 +13,11 @@ export default function Home() {
   return (
     <div>
       <Header_miaudota/>
-      <Slides/>
-      <Filter/>
-      <Pets/>
+      <main className='content'>
+        <Slides/>
+        <Filter/>
+        <Pets/>
+      </main>
       <Footer_miaudota/>
     </div>
   );

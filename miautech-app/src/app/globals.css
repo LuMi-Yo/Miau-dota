@@ -35,7 +35,12 @@ body {
   font-family: fredoka, "Segoe UI", sans-serif;
   font-weight: 400;
   width: 100%;
+  min-height: 100vh;
 }
+
+/* content {
+  flex: 1;
+} */
 
 section,
 div {
