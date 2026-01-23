@@ -8,7 +8,6 @@ type Pet = {
     age: string;
     sexo: string;
 }
-
 export default async function Pets() {
     const { data, error } = await supabase
     .from<'Registro_de_pets', Pet>('Registro_de_pets')
@@ -19,14 +18,14 @@ export default async function Pets() {
     return (
         <section className="pets">
             {data.map(pet => (
-                    <a href={`/miaujuda/details/${pet.id}`}>
-                        <img src="./imgs/miaudota/pata1.png" className="pata1" />
+                    <Link key={pet.id} href={`/miaujuda/details/${pet.id}`}>
+                        <img src="./imgs/miaudota/pata1.png" className="pata1" alt="Pata"/>
                             <div>
-                                <img src={pet.image}/>
+                                <img src={pet.image} alt="Imagem do Pet"/>
                                 <p className="name">{pet.name}</p>
                                 <p className="infos-pet ">{pet.age} | {pet.sexo}</p>
                             </div>
-                    </a>
+                    </Link>
             ))}
         </section>
     )

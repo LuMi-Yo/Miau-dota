@@ -14,7 +14,7 @@ import Footer_miaudota from "../components/miaudota/Footer-miaudota";
 
 export default function Home() {
   const [popupAberto, setpopupAberto] = useState(false);
-  console.log("popup:", popupAberto);
+  // console.log("popup:", popupAberto);
 
   return (
     <div>
@@ -23,7 +23,7 @@ export default function Home() {
         <Slides />
         <Filter setpopupAberto={setpopupAberto} />
         {popupAberto && <Popup />}
-          <Pets />
+        <Pets />
       </main>
       <Footer_miaudota />
     </div>
