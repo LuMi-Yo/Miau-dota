@@ -22,7 +22,7 @@ export default function Home() {
       <main className="content">
         <Slides />
         <Filter setpopupAberto={setpopupAberto} />
-        {popupAberto && <Popup />}
+        {popupAberto && <Popup setpopupAberto={setpopupAberto} />}
         <section className="pets">
           <Pets />
         </section>
