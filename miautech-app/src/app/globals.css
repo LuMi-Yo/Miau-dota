@@ -76,7 +76,7 @@ header #user {
 
 header .options {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   text-align: center;
   align-items: center;
   color: #fcf9f3;
@@ -90,6 +90,7 @@ header .options a {
   font-weight: 500;
   color: #452824;
   text-decoration: none;
+  margin: 0 0.9rem ;
 }
 
 header .options a:hover {
