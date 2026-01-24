@@ -20,7 +20,8 @@ function FoundPet(){
         const desc = formData.get("desc")
         const namePet = formData.get("nome_P")
         const name = formData.get("nome")
-        const size = formData.get("porte")        
+        const size = formData.get("porte")
+        const genero = formData.get("genero")            
 
 
         try{
@@ -50,7 +51,8 @@ function FoundPet(){
                     location: location,
                     name: name,
                     namePet: namePet,
-                    size: size
+                    size: size,
+                    genero: genero
                 }]);
 
             if(insertError) throw insertError;
@@ -95,11 +97,11 @@ function FoundPet(){
                 </select>
             </label>
 
-            <label htmlFor="sexo">
+            <label htmlFor="genero">
                 Gênero: 
                 <select 
-                 id="sexo" 
-                 name="sexo"
+                 id="genero" 
+                 name="genero"
                  required
                  className="border-2 border-amber-600 rounded-3xl focus:outline m-2 p-1 invalid:border-red-600"
                 >
