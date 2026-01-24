@@ -10,8 +10,8 @@ export default function Header_miaudota() {
        <div className="options">
             <Link href="/MiauTech/">Início</Link>
             <Link href="/MiauTech/pages/miau-juda-ini.html">Miau-juda</Link>
-            <Link href="/MiauTech/pages/donation.html">Doar</Link>
-            <Link href="/MiauTech/pages/eventos.html">Eventos de adoção</Link>
+            <Link href="/miaudota/donate">Doar</Link>
+            <Link href="/miaudota/eventos">Eventos de adoção</Link>
             <Link href="">
             <img
             src="./imgs/miaudota/user-base.png"

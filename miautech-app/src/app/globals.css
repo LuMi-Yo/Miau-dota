@@ -478,8 +478,10 @@ header .options a:hover {
 }
 
 .pq-doar .imgs-pets {
-  align-items: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 .pq-doar .imgs-pets img {
@@ -497,6 +499,7 @@ header .options a:hover {
   font-size: 1.8rem;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 4%;
 }
 
 .pq-doar button {
