@@ -1,5 +1,7 @@
+"use client"
 import { supabase } from "@/src/lib/supabase";
 import Link from "next/link"
+import { useEffect, useState } from 'react';
 
 type Pet = {
     id: number;
@@ -8,12 +10,31 @@ type Pet = {
     age: string;
     sexo: string;
 }
-export default async function Pets() {
-    const { data, error } = await supabase
-    .from<'Registro_de_pets', Pet>('Registro_de_pets')
-    .select('*')
+export default function Pets() {
+    const [data, setData] = useState<Pet[] | null>([]);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => { //hook para buscar os dados após o componente ser montado
+        const fetchData = async () => {
+            const { data, error } = await supabase
+                .from('Registro_de_pets')
+                .select('*');
+
+            if (error) {
+                setError(error.message)
+            } else {
+                setData(data)
+            }
+        };
+        fetchData();
+    }, []);
+
+    // const { data, error } = await supabase
+    // .from<'Registro_de_pets', Pet>('Registro_de_pets')
+    // .select('*')
 
     if (error) return <div> Erro: {error.message} </div>
+    if (!data) return <div> Carregando... </div>
 
     return (
         <section className="pets">
